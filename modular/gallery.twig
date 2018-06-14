@@ -1,0 +1,19 @@
+---
+title: Gallery
+file_prefix: pre
+descriptions: yes
+tags: ???
+---
+{% for each image_file in that dir do %}
+<div class="col_md_3">
+    <div class="image">
+	<img class="imgclass" src="{{imgfile.jpg}}">
+    </div>
+
+    <div class="description">
+{{some html imported from ...txt}}
+    </div>
+
+</div>
+
+{% end  %}
