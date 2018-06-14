@@ -4,16 +4,14 @@ file_prefix: pre
 descriptions_as html: yes
 tags: ???
 ---
-{% for each image_file in that dir do %}
+{% for image in page.media.images %}
 <div class="col_md_3">
     <div class="image">
-	<img class="imgclass" src="{{imgfile.jpg}}">
+    <img class="imgclass" src="{{ image.url }}">
     </div>
 
     <div class="description">
-{{some html imported from ...txt}}
+    {{ image.title }}
     </div>
-
 </div>
-
-{% end  %}
+{% endfor %}
